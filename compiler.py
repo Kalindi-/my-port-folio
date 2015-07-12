@@ -1,3 +1,7 @@
+# Code to render content to be hosted on google app engine
+# link to page http://my-little-port-folio.appspot.com/
+
+
 import os
 import webapp2
 import jinja2
