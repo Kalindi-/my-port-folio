@@ -5,6 +5,7 @@
 import os
 import webapp2
 import jinja2
+import json
 
 from google.appengine.ext import ndb
 
@@ -29,13 +30,18 @@ class Handler(webapp2.RequestHandler):
         """takes template to fill it in with the keywords"""
         self.write(self.render_str(template, **key_word_dictionary))
 
-class HomePage(Handler):
-    def get(self):
-        """make homepage page up"""
-        self.render("index.html")
+class Page(Handler):
+    def get(self, reg_input):
+        """makes pages up"""
+        self.render(page_dictionary[reg_input])
+
+page_dictionary = {
+    "1" : "index.html",
+    "2" : "srcset.html"
+}
 
 
 #creation of pages
-app = webapp2.WSGIApplication([('/', HomePage),
+app = webapp2.WSGIApplication([('/(\w+)', Page),
                               ],
                               debug = True)

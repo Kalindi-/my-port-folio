@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="shortcut icon" href="http://www.iconj.com/ico/s/3/s3njgtbnnd.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A little port-folio</title>
+</head>
+<body>
+  <div class="grid">
+    <header class="row">
+      <div class="col-2 logo">
+        <p>K</p>
+      </div>
+      <div class="col-10">
+        <h1>SRCSET TRY</h1>
+        <h4> <a href="/1">Back to that other page</a> </h4>
+      </div>
+    </header>
+    <hr class="header-hr">
+    <main>
+      <div class="row">
+        <div class="col-12">
+         <h3> On this page I want to try using the srcset attribute</h3>
+          <figure>
+            <figcaption>with the picture tag:</figcaption>
+            <picture>
+              <source media="(min-width: 60em)"
+                  srcset="/img/birdsky2.png">
+              <source media="(min-width: 37em)"
+                  srcset="/img/birdsky3.png">
+              <img src="/img/birdsky6.png" alt="birdies in the sky changing with media">
+            </picture>
+          </figure>
+          <figure>
+            <figcaption> forum provided example </figcaption>
+            <picture>
+              <source media="(min-width: 64em)" srcset="http://lorempixel.com/output/nature-q-c-600-600-7.jpg">
+              <source media="(min-width: 37.5em)" srcset="http://lorempixel.com/output/animals-q-c-600-600-3.jpg">
+              <source srcset="http://lorempixel.com/output/animals-q-c-600-600-1.jpg">
+              <img src="http://lorempixel.com/output/animals-q-c-600-600-9.jpg"
+                alt="This picture loads on non-supporting browsers.">
+            </picture>
+          </figure>
+          <figure>
+            <figcaption> width settings </figcaption>
+            <img src="/img/birdsky6.png"
+              srcset="/img/birdsky4.png 219w,
+              /img/birdsky2.png 864w,
+              /img/birdsky3.png 1254w"
+              sizes="80vw"
+              alt="The sky with a bird with width settings" class="srcset-1">
+          </figure>
+          <figure>
+            <figcaption>forum provided example </figcaption>
+            <img src="http://lorempixel.com/output/nature-q-c-650-650-4.jpg"
+              srcset="http://lorempixel.com/output/nature-q-c-450-450-2.jpg 450w,
+              http://lorempixel.com/output/nature-q-c-600-600-7.jpg  600w,
+              http://lorempixel.com/output/nature-q-c-864-864-3.jpg 864w,
+              http://lorempixel.com/output/nature-q-c-1254-1254-9.jpg 1254w"
+              sizes="80vw"
+              alt="Choose image based on image width and viewport size">
+          </figure>
+          <figure>
+            <figcaption> viewport settings</figcaption>
+            <img src="/img/birdsky6.png"
+              srcset="/img/birdsky3.png 1.5x,
+                      /img/birdsky2.png 2x"
+              width="400"
+              alt="The sky with a bird with viewport settings"
+              class="srcset-2">
+          </figure>
+          <figure>
+            <figcaption>forum provided example </figcaption>
+            <img src="http://lorempixel.com/output/animals-q-c-600-600-9.jpg"
+              srcset="http://lorempixel.com/output/animals-q-c-600-600-3.jpg 1.5x,
+              http://lorempixel.com/output/animals-q-c-600-600-1.jpg 2x"
+              width="600"
+              alt="Choose image based on image density and width">
+          </figure>
+        </div>
+      </div>
+    </main>
+    <br>
+    <hr>
+    <footer class="row">
+      <p>kalindi</p>
+      <p>july 2015</p>
+      <p>fend</p>
+    </footer>
+  </div>
+</body>
+</html>

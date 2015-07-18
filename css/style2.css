@@ -1,9 +1,8 @@
-/* css for project 1 -fend*/
+/* css for project 1 -fend srcset try*/
 
 /*main body styles*/
 body {
     font-family: "Lucida Console", sans-serif;
-    max-width: 65em;
     min-width: 19em;
     margin: auto;
 }
@@ -58,40 +57,11 @@ h4 {
 }
 
 h1,
-h4,
-.display {
+h4 {
     font-weight: 100;
 }
 
-h2,
-h3 {
-    font-weight: 200;
-}
-
-
-h2 {
-    color: #c4c4c4;
-    font-size: 1.9em;
-}
-
-.h2-bar {
-    color: white;
-    background-color: lightgray;
-    margin: 0;
-    border-radius: 0.25em;
-    text-align: center;
-    padding: 0.25em;
-    margin: 0.5em auto 0.8em;
-    line-height: 1em;
-}
-
-h3 {
-    margin-bottom: 0;
-}
-
-h2,
-.display,
-.logo p  {
+.logo p {
     text-align: center;
 }
 
@@ -103,76 +73,6 @@ a {
 
 a:hover {
     color: rgb(250, 38, 102);
-}
-
-.display {
-    flex-wrap: wrap;
-    justify-content: center;
-    color: #40414f
-}
-
-figcaption {
-    width: 120%;
-    margin-left: -30px;
-}
-
-
-/*img style*/
-img {
-    max-width: 100%;
-    margin-left: -2em;
-}
-
-
-.main-img {
-    max-height: 25em;
-    max-width: 59.125em;
-    margin: auto;
-}
-
-/* modal boxes  */
-
-
-.modal-box {
-    width: 11em;
-    height: 11em;
-    position: relative;
-    margin: 20% auto;
-    padding: 0.5em 1em;
-    border-radius: 0.2em;
-    background: white;
-
-}
-
-.modal-dialog {
-    position: fixed;
-    top: 10000em;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
-
-.modal-dialog:target {
-    top: 0;
-}
-
-
-
-/* the close button*/
-.close {
-    color: black;
-    position: absolute;
-    right: 0.4em;
-    top: 0.2em;
-    font-weight: 900;
-}
-
-.close p:hover {
-    color: red;
 }
 
 /* footer style */
@@ -192,7 +92,6 @@ footer {
 
 .grid {
     margin: -0.40em auto;
-    max-width: 54em;
 }
 
 .row {
@@ -274,26 +173,12 @@ footer {
         min-width: 7.5em;
         max-width: 8em;
     }
-
-    .section-1,
-    .section-2 {
-        width: 50%;
-    }
-
-    .section-3 {
-        width: 80%;
-    }
 }
 
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 2.5em;
         margin-top: 0.4em
-    }
-
-    .h2-bar {
-        font-size: 1.4em;
-        padding: 0.2em 0.2em 0.2em 0.5em;
     }
 
     h4 {
@@ -307,12 +192,6 @@ footer {
     .logo {
         min-width: 5.9em;
         max-width: 5.9em;
-    }
-
-    .section-1,
-    .section-2,
-    .section-3 {
-        width: 90%;
     }
 
     footer p {
