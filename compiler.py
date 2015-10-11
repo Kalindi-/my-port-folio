@@ -31,17 +31,18 @@ class Handler(webapp2.RequestHandler):
         self.write(self.render_str(template, **key_word_dictionary))
 
 class Page(Handler):
-    def get(self, reg_input):
+    def get(self, reg_input="0"):
         """makes pages up"""
         self.render(page_dictionary[reg_input])
 
 page_dictionary = {
-    "1" : "index.html",
+    "0" : "index.html",
     "2" : "srcset.html"
 }
 
 
 #creation of pages
-app = webapp2.WSGIApplication([('/(\w+)', Page),
+app = webapp2.WSGIApplication([(r'/', Page),
+                               ('/(\w+)', Page),
                               ],
                               debug = True)
